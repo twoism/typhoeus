@@ -282,6 +282,7 @@ module Typhoeus
       args[:on_failure] ||= @remote_defaults[:on_failure]
       args[:base_uri]   ||= @remote_defaults[:base_uri]
       args[:path]       ||= @remote_defaults[:path]
+      args[:headers]    ||= @remote_defaults[:headers]
       m = RemoteMethod.new(args)
 
       @remote_methods ||= {}
